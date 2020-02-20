@@ -2,7 +2,8 @@
 
 /**
  * *_strcat - check the code for Holberton School students.
- *
+ *@dest: is a parameter.
+ *@src: is a parameter.
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
@@ -10,15 +11,17 @@ char *_strcat(char *dest, char *src)
 	int x;
 	int i = 0;
 	int y = 0;
-	while(dest[y++])
+
+	while (dest[y++])
 	{
 		i++;
 
 	}
-	for(x = 0; x <= i; x++)
+
+	for (x = 0; x <= i; x++)
 	{
 		dest[i + x] = src[x];
 
 	}
-	return dest;
+	return (dest);
 }
