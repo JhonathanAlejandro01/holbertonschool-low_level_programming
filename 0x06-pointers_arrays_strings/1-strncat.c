@@ -9,14 +9,6 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	if (dest == NULL)
-	{
-		return (NULL);
-	}
-	if  (src == NULL)
-	{
-		return (dest);
-	}
 	int x;
 	int i = 0;
 	int y = 0;
