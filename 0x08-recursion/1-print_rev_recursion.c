@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _puts_rev_recursion - prototype.
+ * _print_rev_recursion - prototype.
  *@s: is parameter.
  * Return: Always 0.
  */
