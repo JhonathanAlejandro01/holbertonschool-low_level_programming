@@ -1,36 +1,50 @@
 #include "holberton.h"
+
+int num(int i, int n);
 /**
- * _sqrt_recursion - prototype.
- *@n: is parameter.
- * funtion - is the other part.
- *@i: is the counte.
- * Return: Always 0.
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: int type Integer.
+ * Return: recursion.
+ *
  */
-int funtion(int i, int n);
-	¬
 int _sqrt_recursion(int n)
 {
-	int i = 0;
+	int i;
+
+	i = 0;
 
 	if (n < 0)
 	{
 		return (-1);
 	}
-	return (funtion(i, n));
+
+	return (num(i, n));
 }
-int funtion(int i, int n)
+
+/**
+ *num - function to recursion
+ *@i:iterator
+ *@n: number of sqrt
+ *Return: return recursive character
+ */
+
+int num(int i, int n)
 {
+
 	if (n == 0 || n == 1)
 	{
 		return (n);
 	}
+
 	if (i * i < n)
 	{
-		return (funtion(i + 1, n));
+		return (num(i + 1, n));
 	}
+
 	if (i * i == n)
 	{
 		return (i);
 	}
+
 	return (-1);
 }
