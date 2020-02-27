@@ -3,7 +3,7 @@
 int prime_w(int n, int i);
 
 /**
- *is_prime_number - say if is prime or not
+ *is_prime_number - prototype.
  *@n: number to be checked
  *Return: return 1 if primer 0 otherwise
  */
@@ -15,7 +15,6 @@ int is_prime_number(int n)
 
 	i = 2;
 
-	/* 0,1 not considered prime numbers*/
 	if (n < 2)
 	{
 		return (0);
