@@ -1,2 +1,2 @@
-Directory:0x08-recursion
-proyect: 0x08. C - Recursion
+Directory:0x09-static_libraries
+proyect:0x09. C - Static libraries
