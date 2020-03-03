@@ -28,7 +28,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for(i = 0; i < counter; i++)
+		for (i = 0; i < counter; i++)
 		{
 			p[i] = str[i];
 		}
