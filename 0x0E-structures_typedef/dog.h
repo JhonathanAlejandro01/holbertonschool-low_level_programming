@@ -1,8 +1,10 @@
+#ifndef _DOG_H_
+#define _DOG_H_
 /**
- * struct my_struct - Short description
- * @a: First member
- * @b: Second member
- * @c: Third member
+ * struct dog - date of dog
+ * @name: name member
+ * @age: age member
+ * @owner: owner member
  *
  * Description: Longer description
  */
@@ -12,3 +14,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
