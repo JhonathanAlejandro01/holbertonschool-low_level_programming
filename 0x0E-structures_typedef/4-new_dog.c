@@ -19,12 +19,13 @@ dest[i] = src[i];
 dest[i] = '\0';
 return (dest);
 }
+
 /**
- *new_dog - check the code for Holberton School students.
- *@name: is name
- *@age: is a age
- *@owner: is a owner
- * Return: Always 0.
+ * new_dog - Creates a new structure dog
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ * Return: Return a pointer to the structure
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
