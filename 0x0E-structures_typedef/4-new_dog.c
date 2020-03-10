@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 /**
  *new_dog - check the code for Holberton School students.
@@ -10,16 +11,30 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *new_dog;
+	dog_t *ptr;
 
-	new_dog = malloc(sizeof(struct dog));
+	ptr = malloc(sizeof(dog_t));
+	if (ptr == NULL)
+		return (NULL);
 
-	if (new_dog == NULL)
+	(*ptr).name = malloc(sizeof(name) + 1);
+	if (name == NULL)
 	{
+		free(ptr);
 		return (NULL);
 	}
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->owner = owner;
-	return (new_dog);
+
+	(*ptr).owner = malloc(sizeof(owner) + 1);
+	if ((*ptr).owner == NULL)
+	{
+		free((*ptr).name);
+		free(ptr);
+		return (NULL);
+	}
+
+	strcpy((*ptr).name, name);
+	strcpy((*ptr).owner, owner);
+	(*ptr).age = age;
+
+	return (ptr);
 }
