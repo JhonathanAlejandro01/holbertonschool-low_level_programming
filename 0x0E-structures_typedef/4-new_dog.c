@@ -1,7 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "dog.h"
+/**
+ * *_strcpy - copy string
+ * @dest: char to test
+ * @src: char to test
+ *
+ * Return: char
+ */
+char *_strcpy(char *dest, char *src)
+{
+int i;
+
+for (i = 0; src[i] != '\0'; i++)
+{
+dest[i] = src[i];
+}
+
+dest[i] = '\0';
+return (dest);
+}
 /**
  *new_dog - check the code for Holberton School students.
  *@name: is name
@@ -32,8 +49,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	strcpy((*ptr).name, name);
-	strcpy((*ptr).owner, owner);
+	_strcpy((*ptr).name, name);
+	_strcpy((*ptr).owner, owner);
 	(*ptr).age = age;
 
 	return (ptr);
