@@ -1,4 +1,5 @@
 #include <stidio.h>
+#include "3-calc.h"
 /**
  * op_add - operator add
  *@a: is a integer number

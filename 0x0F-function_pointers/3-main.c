@@ -1,8 +1,9 @@
+#include "3-calc.h"
 #include <stdio.h>
 /**
+ * main - is a calculadora
  *
- *
- *
+ * Return: is 0
  */
 int main(int argc, char *argv[])
 {
