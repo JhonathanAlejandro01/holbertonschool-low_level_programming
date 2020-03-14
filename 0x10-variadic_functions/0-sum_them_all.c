@@ -2,7 +2,7 @@
 /**
  * sum_them_all - is the variadic Functions
  *@n: is the quantity of arguments
- * Retuns: a intergrer.
+ * Return: value of sum_them_all
  */
 int sum_them_all(const unsigned int n, ...)
 {
