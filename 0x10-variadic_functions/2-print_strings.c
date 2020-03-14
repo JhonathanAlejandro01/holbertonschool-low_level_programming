@@ -1,7 +1,8 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
 /**
  * print_strings - check the code for Holberton School students.
  *@n: is a counter
+ *@separator: is a comma
  * Return: Always 0.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -10,11 +11,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *p;
 	va_list list;
+
 	va_start(list, n);
-	for(i = 0; i < n; i++)
+
+	for (i = 0; i < n; i++)
 	{
 		p = va_arg(list, char*);
-		if(p != NULL)
+		if (p != NULL)
 		{
 			printf("%s", p);
 		}
@@ -22,11 +25,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("(nil)");
 		}
-		if(separator != NULL && i != (n - 1))
+		if (separator != NULL && i != (n - 1))
 		{
-			printf("%S", separator);
+			printf("%s", separator);
 		}
 	}
 	va_end(list);
-	printf('\n');
+	printf("\n");
 }
