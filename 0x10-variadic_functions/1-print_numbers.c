@@ -15,8 +15,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	/* initialize the list */
 	va_start(list, n);
-	if (separator == NULL)
-	{}
 	/* ACCESS THE ARGUMENTS OF THE LIST */
 	while (i < n)
 	{
@@ -25,7 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		/* prints the numbers */
 		printf("%d", total);
 
-		if (i < n)
+		if (i < n && separator != NULL)
 		{
 			/* print the comma */
 			printf("%s", separator);
