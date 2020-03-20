@@ -1,6 +1,6 @@
-/* for not double inclusion */
 #ifndef _LIST_H_
 #define _LIST_H_
+/* for not double inclusion */
 /* the libraries standard */
 #include <stdio.h>
 #include <string.h>
@@ -17,10 +17,10 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 /* the prototype functions */
 size_t print_list(const list_t *h);
-#enfif
+#endif
