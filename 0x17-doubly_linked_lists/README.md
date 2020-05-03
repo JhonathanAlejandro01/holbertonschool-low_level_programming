@@ -17,6 +17,8 @@
 
   free a doubly linked list
 * 5-get_dnodeint.c
+
+  function that returns the sum of all the data (n) of a double linked list.
 * 6-sum_dlistint.c
 * 7-insert_dnodeint.c
 * 8-delete_dnodeint.c
