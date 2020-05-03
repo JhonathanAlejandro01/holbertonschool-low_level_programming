@@ -15,7 +15,7 @@
 * 3-add_dnodeint_end.c
 * 4-free_dlistint.c
 
-free a doubly linked list
+	free a doubly linked list
 * 5-get_dnodeint.c
 * 6-sum_dlistint.c
 * 7-insert_dnodeint.c
