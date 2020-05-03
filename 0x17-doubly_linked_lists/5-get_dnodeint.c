@@ -7,18 +7,16 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int counter = 0;
+	unsigned int counter;
 	dlistint_t *node_index = head;
 
+	for (counter = 0; counter < index && node_index != NULL; counter++)
+	{
+		node_index = node_index->next;
+	}
 	if (node_index == NULL)
 	{
 		return (NULL);
-	}
-	while (counter < index)
-	{
-		node_index = head->next;
-		head = node_index;
-		counter++;
 	}
 	return (node_index);
 }
