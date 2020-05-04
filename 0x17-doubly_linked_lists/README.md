@@ -24,3 +24,5 @@
 
   funtion that insert a new node at given position.
 * 8-delete_dnodeint.c
+
+function that deletes the node at index of a double linked list.
