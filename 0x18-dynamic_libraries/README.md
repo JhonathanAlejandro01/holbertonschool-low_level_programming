@@ -12,3 +12,5 @@
 * libholberton.so
 * holberton.h
 * create_dynamic_lib.sh
+
+Inside the all funtions.
